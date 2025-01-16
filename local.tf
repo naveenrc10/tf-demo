@@ -9,3 +9,7 @@ resource "random_string" "random_Str"{
     upper   = false
     numeric = false
 }
+output "random_Str_value" {
+  value = random_string.random_Str.id
+  description = "this the random string value"
+}
